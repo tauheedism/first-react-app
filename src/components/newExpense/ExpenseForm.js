@@ -6,22 +6,8 @@ function ExpenseForm(props) {
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
-  // const [userInput, setUserInput] = useState({
-  //   enteredTitle: '',
-  //   enteredAmount: '',
-  //   enteredDate: ''
-  // })
-
   const dateHandler = (event) => {
     setEnteredDate(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredTitle: event.target.value
-    // })
-
-    // setUserInput((prevState) => {
-    //   return {...prevState, enteredTitle: event.target.value}
-    // })
   };
 
   const titleHandler = (event) => {
@@ -75,7 +61,7 @@ function ExpenseForm(props) {
             onChange={dateHandler}
             type="date"
             name="date"
-            min="2022-06-19"
+            min="2019-06-19"
             max="2023-12-31"
             value={enteredDate}
           />
