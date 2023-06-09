@@ -1,25 +1,23 @@
 import React from "react";
-import './ExpensesFilter.css'
+import "./ExpensesFilter.css";
 
 function ExpensesFilter(props) {
-
   const selectedYearHandler = (e) => {
     e.preventDefault();
     props.onChangeFilter(e.target.value);
   };
 
-
   return (
     <div className="expenses-filter">
-    <div className="expenses-filter__control">
-      <label className="filterTitle">Filter by year</label>
-      <select value={props.selected} onChange={selectedYearHandler}>
-        <option value="2023">2023</option>
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-      </select>
+      <div className="expenses-filter__control">
+        <label className="filterTitle">Filter by year</label>
+        <select value={props.selected} onChange={selectedYearHandler}>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+        </select>
       </div>
     </div>
   );

@@ -1,21 +1,20 @@
-import React ,{ useState } from "react";
+import React, { useState } from "react";
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
 import "./ExpenseItem.css";
 import Card from "../UI/Card";
 
 const ExpenseItem = (props) => {
-  const [title,setTitle]=useState(props.title)
+  const [title, setTitle] = useState(props.title);
   // let id = props.id;
 
-  const deleteHandler = () => 
-  {
-    console.log('delete')
-  }
+  const deleteHandler = () => {
+    console.log("delete");
+  };
   const eventHandler = () => {
-     setTitle("$100");
-      console.log(title);
-  }
+    setTitle("$100");
+    console.log(title);
+  };
   return (
     <Card className="expense-item">
       <div>
@@ -26,6 +25,6 @@ const ExpenseItem = (props) => {
       {/* <button onClick={deleteHandler}>Delete Expense</button> */}
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
