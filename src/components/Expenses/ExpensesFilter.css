@@ -22,3 +22,7 @@ expenses-filter {
     font-weight: bold;
     border-radius: 6px;
   }
+
+.filterTitle{
+  color: rgb(240, 237, 232);
+}
